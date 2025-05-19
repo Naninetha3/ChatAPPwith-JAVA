@@ -1,215 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- <title>Java Bidirectional Chat Application</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9fafb;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  h1, h2, h3 {
-    color: #007ACC;
-  }
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.3em;
-  }
-  h2 {
-    border-bottom: 3px solid #007ACC;
-    padding-bottom: 0.2em;
-    margin-top: 1.5em;
-  }
-  code, pre {
-    background: #282c34;
-    color: #61dafb;
-    padding: 5px 8px;
-    border-radius: 5px;
-    font-family: Consolas, Monaco, 'Courier New', monospace;
-  }
-  pre {
-    padding: 15px;
-    overflow-x: auto;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  ul li::before {
-    content: "✨ ";
-    color: #ff5722;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5em;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 12px 15px;
-    text-align: left;
-  }
-  th {
-    background-color: #007ACC;
-    color: white;
-  }
-  a {
-    color: #007ACC;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .emoji {
-    font-size: 1.2em;
-  }
-  .highlight {
-    background-color: #fffae6;
-    border-left: 4px solid #ffb300;
-    padding: 10px 15px;
-    margin: 20px 0;
-  }
-</style> -->
-</head>
-<body>
+<p align="center">
+  <img src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/24277008.jpg" alt="Chat Architecture" width="300" />
+</p>
 
-<h1>💬 Java Bidirectional Chat Application</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00FFFj&center=true&vCenter=true&width=600&lines=💬+Java+Bidirectional+Chat+App;🔄+Real-time+Socket+Messaging;🚀+Built+with+Java+TCP+Sockets" alt="Typing SVG" />
+</h1>
 
-<p>A simple <strong>Java socket-based</strong> bidirectional chat application enabling real-time communication between two clients.</p>
+---
 
-<h2>📋 Table of Contents</h2>
-<ul>
-  <li><a href="#about">📖 About</a></li>
-  <li><a href="#features">✨ Features</a></li>
-  <li><a href="#technology-stack">🛠 Technology Stack</a></li>
-  <li><a href="#architecture">🏗 Architecture</a></li>
-  <li><a href="#installation">🚀 Installation</a></li>
-  <li><a href="#usage">▶ Usage</a></li>
-  <li><a href="#how-it-works">🔍 How It Works</a></li>
-  <li><a href="#code-structure">🗂 Code Structure</a></li>
-  <li><a href="#contributing">🤝 Contributing</a></li>
-  <li><a href="#license">📜 License</a></li>
-  <li><a href="#contact">📫 Contact</a></li>
-</ul>
+<img align="right" alt="Chat Demo" width="300" src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/Two%20hands%20holding%20phones%20with%20messages%20in%20speech%20bubbles.jpg" />
 
-<h2 id="about">📖 About</h2>
-<p>This project implements a <strong>bidirectional chat application</strong> in Java using TCP sockets. It allows two clients to connect to a server and exchange messages simultaneously, demonstrating fundamental socket programming concepts.</p>
+### 🚀 About This Project
 
-<h2 id="features">✨ Features</h2>
-<ul>
-  <li>🔄 Real-time bidirectional communication</li>
-  <li>🧑‍🤝‍🧑 Two-client chat support</li>
-  <li>🖥️ Server-client architecture with Java sockets</li>
-  <li>⚡ Low-latency message transmission</li>
-  <li>💻 Console-based user interface (CLI)</li>
-</ul>
+- 🔭 **Project**: Java Bidirectional Chat Application  
+- 🌐 **Stack**: Java SE 8+, TCP Sockets, Multithreading  
+- 🔄 **Communication**: Full-duplex chat between two clients via a central server  
+- 🎯 **Goal**: Demonstrate socket programming & real-time messaging in pure Java  
 
-<h2 id="technology-stack">🛠 Technology Stack</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Technology</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Programming Language</td>
-      <td>☕ Java SE 8+</td>
-      <td>Core application language</td>
-    </tr>
-    <tr>
-      <td>Network Protocol</td>
-      <td>🔌 TCP Sockets</td>
-      <td>Reliable connection-oriented communication</td>
-    </tr>
-    <tr>
-      <td>User Interface</td>
-      <td>🖥️ Console (CLI)</td>
-      <td>Text-based input/output</td>
-    </tr>
-  </tbody>
-</table>
+---
 
-<h2 id="architecture">🏗 Architecture</h2>
-<pre><code>+----------------+           +----------------+           +----------------+
-|  Client 1      | &lt;------&gt; |   Server       | &lt;------&gt; |   Client 2     |
-+----------------+           +----------------+           +----------------+
-</code></pre>
-<p>- Server acts as the mediator for message forwarding between clients</p>
-<p>- Each client maintains a persistent socket connection to the server</p>
+### 🌟 Features
 
-<h2 id="installation">🚀 Installation</h2>
-<div class="highlight">
-  <p><strong>1. Clone the repository</strong></p>
-  <pre><code>git clone https://github.com/yourusername/java-bidirectional-chat.git
+- 🔄 **Bidirectional**: Clients can send & receive messages simultaneously  
+- 🖥️ **Console UI**: Simple, intuitive CLI for both server and client  
+- ⚡ **Low-latency**: Fast message forwarding via TCP  
+- 🔒 **Thread-safe**: Each client handled in its own thread  
+
+---
+
+### Practical Images & Videos 
+
+**Real time Chat History**
+
+<p align="center">
+  <img src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/realtime%20chat%20.png" alt="Chat Architecture" width="800" />
+</p>
+** Connection Establishment**
+<p align="center">
+  <img src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/connection%20establish.png" alt="Chat Architecture" width="800" />
+</p>
+
+
+---
+### 🌐 Connect & Run
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/java-bidirectional-chat.git
 cd java-bidirectional-chat
-</code></pre>
 
-  <p><strong>2. Compile all Java files</strong></p>
-  <pre><code>javac *.java
-</code></pre>
-</div>
+# 2. Compile
+javac ChatServer.java ChatClient.java
 
-<h2 id="usage">▶ Usage</h2>
-<div class="highlight">
-  <p><strong>Start the Server</strong></p>
-  <pre><code>java ChatServer
-</code></pre>
+# 3. In one terminal, start Server
+java ChatServer 5000
 
-  <p><strong>Start Client 1</strong></p>
-  <pre><code>java ChatClient
-</code></pre>
+# 4. In two other terminals, start Clients
+java ChatClient localhost 5000
+java ChatClient localhost 5000
+**🎬 Live Demo**
+<p align="center"> <img src="https://raw.githubusercontent.com/yourusername/java-bidirectional-chat/main/images/server-terminal.png" alt="Server Terminal" width="250" class="demo-screenshot" /> &nbsp;&nbsp; <img src="https://raw.githubusercontent.com/yourusername/java-bidirectional-chat/main/images/client1-terminal.png" alt="Client1 Terminal" width="250" class="demo-screenshot" /> &nbsp;&nbsp; <img src="https://raw.githubusercontent.com/yourusername/java-bidirectional-chat/main/images/client2-terminal.png" alt="Client2 Terminal" width="250" class="demo-screenshot" /> </p>
+**🗂️ **Code Structure**
+java-bidirectional-chat/
+├── ChatServer.java      # Server socket & thread manager
+├── ChatClient.java      # Client socket & console UI
+├── images/              # Screenshots & architecture visuals
+│   ├── architecture.png
+│   ├── server-terminal.png
+│   ├── client1-terminal.png
+│   └── client2-terminal.png
+└── README.md            # This file
 
-  <p><strong>Start Client 2 (in another terminal)</strong></p>
-  <pre><code>java ChatClient
-</code></pre>
+🤝 Contributing
 
-  <p>Start chatting! 🗨️</p>
-</div>
+🌱 Fork this repo
 
-<h2 id="how-it-works">🔍 How It Works</h2>
-<ul>
-  <li>The <strong>server</strong> waits for clients to connect on a specified port.</li>
-  <li>Upon connection, the server creates separate threads to handle each client.</li>
-  <li>Messages from one client are received by the server and forwarded to the other client, enabling bidirectional communication.</li>
-  <li>Clients can send and receive messages simultaneously.</li>
-</ul>
+🚀 Create a branch (git checkout -b feature/YourFeature)
 
-<h2 id="code-structure">🗂 Code Structure</h2>
-<pre><code>├── ChatServer.java       # Server-side socket handling and client management  
-├── ChatClient.java       # Client-side socket communication and UI  
-├── README.md             # This documentation file  
+📝 Commit your changes (git commit -m "Add feature")
 
-</code></pre>
+📤 Push (git push origin feature/YourFeature)
 
-<h2 id="contributing">🤝 Contributing</h2>
-<p>Contributions are welcome! Please follow these steps:</p>
-<ol>
-  <li>Fork the repo</li>
-  <li>Create your feature branch <code>git checkout -b feature/YourFeature</code></li>
-  <li>Commit your changes <code>git commit -m 'Add some feature'</code></li>
-  <li>Push to branch <code>git push origin feature/YourFeature</code></li>
-  <li>Open a pull request</li>
-</ol>
+🔀 Open a Pull Request
 
-
-
-<h2 id="contact">📫 Contact</h2>
-<ul>
-  <li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-  <li>🌐 Website: <a href="https://yourwebsite.com" target="_blank" rel="noopener">yourwebsite.com</a></li>
-  <li>🐦 Twitter: <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></li>
-</ul>
-
-<p style="text-align:center; margin-top: 3em; font-size: 1.2rem;">🎉 Thank you for checking out the project! Happy chatting! 🎉</p>
-
-</body>
-</html>
+📫 Contact
+<p align="left"> <a href="mailto:your.email@example.com"><img align="center" src="https://img.icons8.com/ios-glyphs/30/00ffff/new-post.png" alt="Email"/></a> <a href="https://github.com/yourusername" target="_blank"><img align="center" src="https://img.icons8.com/ios-glyphs/30/00ffff/github.png" alt="GitHub"/></a> <a href="https://linkedin.com/in/yourprofile" target="_blank"><img align="center" src="https://img.icons8.com/ios-glyphs/30/00ffff/linkedin.png" alt="LinkedIn"/></a> </p>
