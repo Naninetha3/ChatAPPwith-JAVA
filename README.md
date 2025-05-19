@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Java Bidirectional Chat Application</title>
+<!-- <title>Java Bidirectional Chat Application</title>
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,7 +75,7 @@
     padding: 10px 15px;
     margin: 20px 0;
   }
-</style>
+</style> -->
 </head>
 <body>
 
