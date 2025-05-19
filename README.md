@@ -35,7 +35,8 @@
 <p align="center">
   <img src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/realtime%20chat%20.png" alt="Chat Architecture" width="800" />
 </p>
-** Connection Establishment**
+**Connection Establishment**
+
 <p align="center">
   <img src="https://github.com/Naninetha3/ChatAPPwith-JAVA/blob/main/connection%20establish.png" alt="Chat Architecture" width="800" />
 </p>
